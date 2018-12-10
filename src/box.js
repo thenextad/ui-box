@@ -13,7 +13,11 @@ export default class Box extends React.Component {
     ...propTypes,
     css: PropTypes.object,
     innerRef: PropTypes.func,
-    is: PropTypes.oneOfType([PropTypes.string, PropTypes.func]),
+    is: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.func,
+      PropTypes.object
+    ]),
     boxSizing: propTypes.boxSizing
   }
 
