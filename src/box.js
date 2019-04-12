@@ -41,10 +41,11 @@ export default class Box extends React.Component {
         if (!cssWarned) {
           cssWarned = true
           console.warn(
-            `📦 ui-box deprecation: the “css” prop will be removed in the next major version in favour of importing glamor directly and passing it՚s generated class to the “className” prop.`
+            `📦 ui-box deprecation: the “css” prop will be removed in the next major version in favour of importing glamor directly and passing its generated class to the “className” prop.`
           )
         }
       }
+
       parsedProps.className = `${className} ${gcss(css).toString()}`
     } else {
       parsedProps.className = className
